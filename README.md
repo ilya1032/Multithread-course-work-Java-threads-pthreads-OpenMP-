@@ -1,1 +1,1 @@
-Multithread course work (Java threads, pthreads, OpenMPI)
+Multi Thread course work (Java threads, pthreads, OpenMPI)
