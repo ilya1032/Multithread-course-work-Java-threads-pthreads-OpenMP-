@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/Headers/Matrix.h
+vector
+-
+iostream
+-
+time.h
+-
+
+/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/main.cpp
+iostream
+-
+pthread.h
+-
+cstdlib
+-
+../Headers/Matrix.h
+/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/Headers/Matrix.h
+
