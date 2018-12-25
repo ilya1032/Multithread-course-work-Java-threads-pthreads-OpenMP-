@@ -2,23 +2,32 @@
 #include <pthread.h>
 #include <cstdlib>
 #include "../Headers/Matrix.h"
+#include <ctime>
 
 int main() {
 
-    int x;
+    time_t t1 = clock(), t2;
+    time_t delta = clock() - t1;
 
-    Matrix A(3,6, true);
-    Matrix B(6,3, true);
+    Matrix A(500, 1, true);
+    Matrix B(1, 500, true);
 
     A.out();
-    cout<<"------"<<endl;
+    cout << "------" << endl;
     B.out();
-    cout<<"------"<<endl;
-    A.mult(B).out();
-    cout<<"------"<<endl;
+    cout << "------" << endl;
 
-    cout<<"Press any key to continue...";
-    cin.get();
+    t1 = clock();
+    A.multOMP(B);
+    t2 = clock() - t1 - delta;
+
+    printf("it took me %f seconds to calc with OMP\n", float(t2)/CLOCKS_PER_SEC);
+
+    t1 = clock();
+    A.mult(B);
+    t2 = clock() - t1 - delta;
+
+    printf("it took me %f seconds to calc with pthreads\n", float(t2)/CLOCKS_PER_SEC);
 
     return 0;
 }

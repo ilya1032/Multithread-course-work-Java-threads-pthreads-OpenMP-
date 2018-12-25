@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/Matrix.cpp" "/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles/pthreads_OpenMP.dir/src/sources/Matrix.cpp.o"
   "/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/main.cpp" "/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles/pthreads_OpenMP.dir/src/sources/main.cpp.o"
-  "/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/matrix_multiplication.cpp" "/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles/pthreads_OpenMP.dir/src/sources/matrix_multiplication.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

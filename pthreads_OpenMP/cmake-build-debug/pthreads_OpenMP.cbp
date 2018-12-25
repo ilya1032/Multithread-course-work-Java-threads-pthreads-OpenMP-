@@ -93,9 +93,6 @@
 		<Unit filename="/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/main.cpp">
 			<Option target="pthreads_OpenMP"/>
 		</Unit>
-		<Unit filename="/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/matrix_multiplication.cpp">
-			<Option target="pthreads_OpenMP"/>
-		</Unit>
 		<Unit filename="/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

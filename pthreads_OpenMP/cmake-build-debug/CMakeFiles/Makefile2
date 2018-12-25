@@ -50,10 +50,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/56/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/57/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/56/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/ilya1032/IdeaProjects/Multithread-course-work-Java-thre
 CMakeFiles/pthreads_OpenMP.dir/all:
 	$(MAKE) -f CMakeFiles/pthreads_OpenMP.dir/build.make CMakeFiles/pthreads_OpenMP.dir/depend
 	$(MAKE) -f CMakeFiles/pthreads_OpenMP.dir/build.make CMakeFiles/pthreads_OpenMP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target pthreads_OpenMP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target pthreads_OpenMP"
 .PHONY : CMakeFiles/pthreads_OpenMP.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/pthreads_OpenMP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pthreads_OpenMP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pthreads_OpenMP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/pthreads_OpenMP.dir/rule

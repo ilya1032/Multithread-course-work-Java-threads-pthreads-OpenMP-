@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/Headers/Matrix.h
+pthread.h
+-
 vector
 -
 iostream
@@ -14,13 +16,11 @@ iostream
 time.h
 -
 
-/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/main.cpp
-iostream
--
-pthread.h
--
-cstdlib
--
+/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/Matrix.cpp
 ../Headers/Matrix.h
 /home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/Headers/Matrix.h
+unistd.h
+-
+omp.h
+-
 

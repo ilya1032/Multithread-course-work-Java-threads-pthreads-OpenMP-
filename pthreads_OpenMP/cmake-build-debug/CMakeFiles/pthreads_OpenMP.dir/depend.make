@@ -7,5 +7,3 @@ CMakeFiles/pthreads_OpenMP.dir/src/sources/Matrix.cpp.o: ../src/sources/Matrix.c
 CMakeFiles/pthreads_OpenMP.dir/src/sources/main.cpp.o: ../src/Headers/Matrix.h
 CMakeFiles/pthreads_OpenMP.dir/src/sources/main.cpp.o: ../src/sources/main.cpp
 
-CMakeFiles/pthreads_OpenMP.dir/src/sources/matrix_multiplication.cpp.o: ../src/sources/matrix_multiplication.cpp
-

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pthreads_OpenMP.dir/src/sources/main.cpp.o"
-  "CMakeFiles/pthreads_OpenMP.dir/src/sources/matrix_multiplication.cpp.o"
   "CMakeFiles/pthreads_OpenMP.dir/src/sources/Matrix.cpp.o"
   "pthreads_OpenMP.pdb"
   "pthreads_OpenMP"

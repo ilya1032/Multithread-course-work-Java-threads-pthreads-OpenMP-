@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/56/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/57/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/56/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/ilya1032/IdeaProjects/Multithread-course-work-Java-thre
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/56/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/57/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/56/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/57/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -177,33 +177,6 @@ src/sources/main.cpp.s:
 	$(MAKE) -f CMakeFiles/pthreads_OpenMP.dir/build.make CMakeFiles/pthreads_OpenMP.dir/src/sources/main.cpp.s
 .PHONY : src/sources/main.cpp.s
 
-src/sources/matrix_multiplication.o: src/sources/matrix_multiplication.cpp.o
-
-.PHONY : src/sources/matrix_multiplication.o
-
-# target to build an object file
-src/sources/matrix_multiplication.cpp.o:
-	$(MAKE) -f CMakeFiles/pthreads_OpenMP.dir/build.make CMakeFiles/pthreads_OpenMP.dir/src/sources/matrix_multiplication.cpp.o
-.PHONY : src/sources/matrix_multiplication.cpp.o
-
-src/sources/matrix_multiplication.i: src/sources/matrix_multiplication.cpp.i
-
-.PHONY : src/sources/matrix_multiplication.i
-
-# target to preprocess a source file
-src/sources/matrix_multiplication.cpp.i:
-	$(MAKE) -f CMakeFiles/pthreads_OpenMP.dir/build.make CMakeFiles/pthreads_OpenMP.dir/src/sources/matrix_multiplication.cpp.i
-.PHONY : src/sources/matrix_multiplication.cpp.i
-
-src/sources/matrix_multiplication.s: src/sources/matrix_multiplication.cpp.s
-
-.PHONY : src/sources/matrix_multiplication.s
-
-# target to generate assembly for a file
-src/sources/matrix_multiplication.cpp.s:
-	$(MAKE) -f CMakeFiles/pthreads_OpenMP.dir/build.make CMakeFiles/pthreads_OpenMP.dir/src/sources/matrix_multiplication.cpp.s
-.PHONY : src/sources/matrix_multiplication.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,9 +192,6 @@ help:
 	@echo "... src/sources/main.o"
 	@echo "... src/sources/main.i"
 	@echo "... src/sources/main.s"
-	@echo "... src/sources/matrix_multiplication.o"
-	@echo "... src/sources/matrix_multiplication.i"
-	@echo "... src/sources/matrix_multiplication.s"
 .PHONY : help
 
 
