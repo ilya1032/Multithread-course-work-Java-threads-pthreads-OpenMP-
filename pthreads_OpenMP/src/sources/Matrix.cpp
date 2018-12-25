@@ -65,15 +65,15 @@ Matrix Matrix::mult(const Matrix &other) const {
 
 Matrix Matrix::multOMP(const Matrix &other) const {
     Matrix C(N, other.M);
-    int i = 0, j = 0, k = 0;
     omp_set_num_threads((C.N * C.M) > MAX_THREAD_COUNT ? MAX_THREAD_COUNT : (C.N * C.M));
-#pragma omp parallel
+    #pragma omp parallel shared(C)
     {
+        int i = 0, j = 0, k = 0, n = N, m = other.M, q = M;
 #pragma omp for
-        for (i = 0; i < N; i++) {
-            for (j = 0; j < other.M; j++) {
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < m; j++) {
                 double dot = 0;
-                for (k = 0; k < M; k++) {
+                for (k = 0; k < q; k++) {
 #pragma omp atomic
                     dot += data.at(i).at(k) * other.data.at(k).at(j);
                 }

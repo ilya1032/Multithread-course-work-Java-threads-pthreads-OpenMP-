@@ -16,11 +16,15 @@ iostream
 time.h
 -
 
-/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/Matrix.cpp
+/home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/sources/main.cpp
+iostream
+-
+pthread.h
+-
+cstdlib
+-
 ../Headers/Matrix.h
 /home/ilya1032/IdeaProjects/Multithread-course-work-Java-threads-pthreads-OpenMPI-/pthreads_OpenMP/src/Headers/Matrix.h
-unistd.h
--
-omp.h
+ctime
 -
 

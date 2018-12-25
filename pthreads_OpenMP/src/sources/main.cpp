@@ -9,8 +9,8 @@ int main() {
     time_t t1 = clock(), t2;
     time_t delta = clock() - t1;
 
-    Matrix A(500, 1, true);
-    Matrix B(1, 500, true);
+    Matrix A(5000, 1, true);
+    Matrix B(1, 10000, true);
 
     A.out();
     cout << "------" << endl;
