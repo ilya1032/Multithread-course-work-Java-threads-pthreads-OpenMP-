@@ -5,6 +5,7 @@ public class Matrix {
     private final int N;
     private final int M;
     private final double[][] data;
+    private final int MAX_THREAD_COUNT = 150;
 
     public Matrix(int N, int M) {
         this.N = N;
@@ -34,13 +35,14 @@ public class Matrix {
     }
 
     public Matrix mult(Matrix A) {
-        if (this.M != A.N) throw new RuntimeException("Multiplication impossible due to different matrix dimensions");
+        if (this.M != A.N)
+            throw new RuntimeException("Multiplication impossible due to different matrix dimensions");
         Matrix C = new Matrix(this.N, A.M);
-        for (int i = 0; i < this.N; i++)
-            for (int j = 0; j < A.M; j++) {
-                MyThread r = new MyThread(this.getData(), A.getData(), C, i, j);
-                new Thread(r, "Calculating").run();
-            }
+        int threadCount = (C.N * C.M) > MAX_THREAD_COUNT ? MAX_THREAD_COUNT : (C.N * C.M);
+        for (int i = 0; i < threadCount; i++) {
+            MyThread r = new MyThread(this.getData(), A.getData(), C, i, threadCount);
+            new Thread(r, "Calculating").run();
+        }
         return C;
     }
 
