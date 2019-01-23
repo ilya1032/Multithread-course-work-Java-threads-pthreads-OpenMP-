@@ -34,7 +34,7 @@ void *Matrix::cellCalcThread(void *param) {
     Matrix *C = reinterpret_cast<Matrix *>(temp.at(4));
     while (*n < (C->M * C->N)) {
         for (int k = 0; k < A->M; k++) {
-            C->data.at(*n / C->M).at(*n % C->N) += A->data.at(*n / C->M).at(k) * B->data.at(k).at(*n % C->N);
+            C->data.at(*n / C->M).at(*n % C->M) += A->data.at(*n / C->M).at(k) * B->data.at(k).at(*n % C->M);
         }
 
         *n += *m;

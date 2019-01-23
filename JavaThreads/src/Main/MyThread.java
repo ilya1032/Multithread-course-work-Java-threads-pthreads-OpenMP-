@@ -7,29 +7,24 @@ public class MyThread extends Thread {
     private int i;
     private final int c;
 
-    MyThread(double[][] m1, double[][] m2, Matrix resMat, int index, int threadCount){
+    MyThread(double[][] m1, double[][] m2, Matrix resMat, int first, int last) {
         A = m1;
         B = m2;
         C = resMat;
-        i = index;
-        c = threadCount;
+        i = first;
+        c = last;
     }
 
-    public void run(){
-        while (i < C.getData().length * C.getData()[0].length) {
+    public void run() {
+        for (int j = i; j < c; j++) {
+            int col = j / C.getData()[0].length;
+            int row = j % C.getData()[0].length;
             for (int k = 0; k < A[0].length; k++) {
-                if (C.getData()[i / C.getData().length][i % C.getData()[0].length] != 0)
-                    C.setData(i / C.getData().length, i % C.getData()[0].length,
-                            C.getData()[i / C.getData().length][i % C.getData()[0].length] +
-                                    (A[i / C.getData().length][k] * B[k][i % C.getData()[0].length]));
+                if (C.getData()[col][row] != 0)
+                    C.setData(col, row, C.getData()[col][row] + (A[col][k] * B[k][row]));
                 else
-                    C.setData(i / C.getData().length, i % C.getData()[0].length,
-                            A[i / C.getData().length][k] * B[k][i % C.getData()[0].length]);
+                    C.setData(col, row, A[col][k] * B[k][row]);
             }
-            i += c;
-
-            if (i > C.getData().length * C.getData()[0].length)
-                break;
         }
     }
 }
